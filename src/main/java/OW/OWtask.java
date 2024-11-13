@@ -15,23 +15,31 @@ import java.util.List;
 import java.util.Properties;
 
 public class OWtask {
+
     public static Properties locator;
+    public static Properties config;
     public static List<WebElement> product;
     public static List<WebElement> storageList;
     public static List<WebElement> memoryList;
     public static List<WebElement> processorList;
     public static WebDriver driver;
-    public static int processorSize = 0, storageSize = 0, productSize = 0, memorySize = 0;
-    public static int memoryCounter = 0, storageCounter = 0, processorCounter = 0,productCounter=0;
+    public static int processorSize = 0, storageSize = 0, productSize = 0, memorySize = 0, totalSize = 0;
+    public static int memoryCounter = 0, storageCounter = 0, processorCounter = 0, productCounter = 0, totalCounter = 0;
 
     public static void main(String[] args) throws IOException, InterruptedException {
+//  load all resource bundles
         locator = new Properties();
         FileInputStream fis = new FileInputStream("src/main/java/OW/locators.properties");
         locator.load(fis);
+        config = new Properties();
+        FileInputStream con = new FileInputStream("src/main/java/OW/config.properties");
+        config.load(con);
+
+//  Webdriver Launch
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(locator.getProperty("URL"));
+        driver.get(config.getProperty("URL"));
         Thread.sleep(2000);
 //product selection
         driver.findElement(By.xpath(locator.getProperty("Laptops"))).click();
@@ -45,29 +53,19 @@ public class OWtask {
 
     public static void tempProductLoop() throws InterruptedException {
         product = new ArrayList<>();
-        productSize = product.size();
-        product = driver.findElements(By.xpath(locator.getProperty("productList")));
-        System.out.println(product.get(productCounter).getText());
-        driver.findElements(By.xpath(locator.getProperty("selectOption"))).get(productCounter).click();
-        Thread.sleep(1000);
-
-    }
-
-    public static void productCountLoop() throws InterruptedException {
-        product = new ArrayList<>();
         product = driver.findElements(By.xpath(locator.getProperty("productList")));
         productSize = product.size();
+        if (productCounter < productSize) {
+//            product = driver.findElements(By.xpath(locator.getProperty("productList")));
+            System.out.println("S.no " + (productCounter + 1) + " PRODUCT NAME: " + product.get(productCounter).getText());
 
-        for (int i = 0; i < productSize; i++) {
-            System.out.println((i + 1) + ". " + product.get(i).getText());
-            driver.findElements(By.xpath(locator.getProperty("selectOption"))).get(i).click();
-            Thread.sleep(1000);
-            if (i > productCounter) {
-                break;
-            }
+            driver.findElements(By.xpath(locator.getProperty("selectOption"))).get(productCounter).click();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        } else {
+            System.out.println("All product under given Category>>Brand are covered." + "\n Total product searched: " + productCounter);
+            driver.quit();
         }
     }
-
     public static void processorCountLoop() throws InterruptedException {
         processorList = new ArrayList<>();
         processorList = driver.findElements(By.xpath(locator.getProperty("eachButton")));
@@ -110,9 +108,15 @@ public class OWtask {
         memoryList = new ArrayList<>();
         memoryList = driver.findElements(By.xpath(locator.getProperty("eachButton")));
         memorySize = memoryList.size();
+
+        totalSize = processorSize * (storageSize - processorSize) * (memorySize - storageSize); //calc size to break loop according
+
         memoryCounter = storageSize;
-        for (int l = storageSize; l < memorySize; l++) { //loop for reading memory element text
+        for (int l = storageSize; l < memorySize; l++) {
+            //loop for reading memory element text
             memoryCounter++;
+            totalCounter++;
+            System.out.println("total counter - "+totalCounter);
             if (memoryCounter <= memorySize) {
                 memoryList = driver.findElements(By.xpath(locator.getProperty("eachButton")));
                 Thread.sleep(300);
@@ -123,21 +127,26 @@ public class OWtask {
                 Thread.sleep(2000);
                 yesAndPrintPrice();
             } else {
-                System.out.println("out of memory count loop, \nMemoryCounter count=" + memoryCounter + "\n");
-                System.out.println("storageCounter +1");
+//   Else- reset the counter of memory and storage
                 memoryCounter = 0;
                 storageCounter = 0;
+            }
+            if (totalCounter >= totalSize) {
+                System.out.println("totalCounter==totalSize");
+                productCounter++;
+                processorSize = 0; storageSize = 0; productSize = 0; memorySize = 0; totalSize = 0;
+                memoryCounter = 0; storageCounter = 0; processorCounter = 0; totalCounter = 0;
 
+                driver.findElement(By.xpath(".//button[text()=\"Cancel\"]")).click();
+                tempProductLoop();
+                processorCountLoop();
             }
         }
     }
 
     public static void yesAndPrintPrice() throws InterruptedException {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
         while (true) { // clicking Yes button until its available
             try {
-//                js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath(locator.getProperty("yesButton"))));
-                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
                 driver.findElement(By.xpath(locator.getProperty("yesButton"))).click();
             } catch (Exception e) {
                 if (e.getMessage().contains("Unable to locate element")) {
@@ -148,30 +157,15 @@ public class OWtask {
             }
         }
         String priceProduct = driver.findElement(By.xpath(locator.getProperty("priceText"))).getText();
-        System.out.println(":- PRICE: " + priceProduct);
-        System.out.println();
+        System.out.println(" :-PRICE:" + priceProduct);
         driver.navigate().refresh();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        driver.findElements(By.xpath(locator.getProperty("selectOption"))).get(0).click(); //temp for first product only
-        if(processorCounter>processorSize && storageCounter>storageSize && memoryCounter>memorySize) {
-            productCounter++;
-            if (productCounter <= productSize) {
-                tempProductLoop();
-                processorCountLoop();
-            }
-            else{
-                System.out.println("Product list ends.\n"+"Total Products: "+productSize+"\nTotal products verified: "+(productCounter-1));
-            }
-        }
-        else {
-            reopenTillMemory();
-        }
-
-
-//check all counters
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.findElements(By.xpath(locator.getProperty("selectOption"))).get(productCounter).click();
+        reopenTillMemory();
     }
 
     public static void reopenTillMemory() throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         driver.findElements(By.xpath(locator.getProperty("eachButton"))).get(processorCounter - 1).click();
         Thread.sleep(500);
         driver.findElements(By.xpath(locator.getProperty("eachButton"))).get(storageCounter - 1).click();
