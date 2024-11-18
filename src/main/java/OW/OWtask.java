@@ -2,12 +2,13 @@ package OW;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -23,7 +24,9 @@ public class OWtask {
     public static List<WebElement> memoryList;
     public static List<WebElement> processorList;
     public static WebDriver driver;
-    public static int processorSize = 0, storageSize = 0, productSize = 0, memorySize = 0, totalSize = 0;
+    public static BufferedWriter wr;
+    public static String productName, processorName, storageName, memoryName, tradePrice;
+    public static int processorSize = 0, storageSize = 0, productSize = 0, memorySize = 0, totalSize = 0, sno = 1;
     public static int memoryCounter = 0, storageCounter = 0, processorCounter = 0, productCounter = 0, totalCounter = 0;
 
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -35,6 +38,11 @@ public class OWtask {
         FileInputStream con = new FileInputStream("src/main/java/OW/config.properties");
         config.load(con);
 
+// Excel
+        wr = new BufferedWriter(new FileWriter("Mac.csv"));
+        wr.write("SNO,Product Name,Processor,Storage,RAM,Trade in value");
+        wr.newLine();
+        wr.close();
 //  Webdriver Launch
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -46,19 +54,17 @@ public class OWtask {
         Thread.sleep(2000);
         driver.findElement(By.xpath(locator.getProperty("Macbook"))).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-
         tempProductLoop();
         processorCountLoop();
     }
 
-    public static void tempProductLoop() throws InterruptedException {
+    public static void tempProductLoop() throws IOException {
         product = new ArrayList<>();
         product = driver.findElements(By.xpath(locator.getProperty("productList")));
         productSize = product.size();
         if (productCounter < productSize) {
-//            product = driver.findElements(By.xpath(locator.getProperty("productList")));
             System.out.println("S.no " + (productCounter + 1) + " PRODUCT NAME: " + product.get(productCounter).getText());
-
+            productName = product.get(productCounter).getText();          //product name stored
             driver.findElements(By.xpath(locator.getProperty("selectOption"))).get(productCounter).click();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         } else {
@@ -66,7 +72,8 @@ public class OWtask {
             driver.quit();
         }
     }
-    public static void processorCountLoop() throws InterruptedException {
+
+    public static void processorCountLoop() throws InterruptedException, IOException {
         processorList = new ArrayList<>();
         processorList = driver.findElements(By.xpath(locator.getProperty("eachButton")));
         processorSize = processorList.size();
@@ -75,6 +82,7 @@ public class OWtask {
             if (processorCounter <= processorSize) {
                 processorList = driver.findElements(By.xpath(locator.getProperty("eachButton")));
                 System.out.println("-Processor " + (j + 1) + ". " + processorList.get(j).getText());
+                processorName = processorList.get(j).getText();     //stored processor name to string
                 processorList.get(j).click(); //till now user clicked on processor name and then storage fields visible to user
                 Thread.sleep(100);
             } else {
@@ -84,7 +92,7 @@ public class OWtask {
         }
     }
 
-    public static void storageCountLoop() throws InterruptedException {
+    public static void storageCountLoop() throws InterruptedException, IOException {
         storageList = new ArrayList<>();
         storageList = driver.findElements(By.xpath(locator.getProperty("eachButton")));
         storageSize = storageList.size();
@@ -94,6 +102,7 @@ public class OWtask {
             if (storageCounter <= storageSize) {
                 storageList = driver.findElements(By.xpath(locator.getProperty("eachButton")));
                 System.out.println("---Storage " + (k + 1 - processorSize) + ". " + storageList.get(k).getText());
+                storageName = storageList.get(k).getText();     //stored storage name to string
                 storageList.get(k).click();//till now user clicked on storage name and now memory field is visible to user
                 Thread.sleep(100);
             } else {
@@ -104,7 +113,8 @@ public class OWtask {
         }
     }
 
-    public static void memoryCountLoop() throws InterruptedException {
+    public static void memoryCountLoop() throws InterruptedException, IOException {
+
         memoryList = new ArrayList<>();
         memoryList = driver.findElements(By.xpath(locator.getProperty("eachButton")));
         memorySize = memoryList.size();
@@ -116,15 +126,18 @@ public class OWtask {
             //loop for reading memory element text
             memoryCounter++;
             totalCounter++;
-            System.out.println("total counter - "+totalCounter);
+//            System.out.println("total counter - "+totalCounter);
             if (memoryCounter <= memorySize) {
+                wr = new BufferedWriter(new FileWriter("Mac.csv", true));
                 memoryList = driver.findElements(By.xpath(locator.getProperty("eachButton")));
                 Thread.sleep(300);
                 memoryList.get(l).click();
+                memoryName = memoryList.get(l).getText();     //stored Ram memory to string
                 System.out.print("------Memory " + (l + 1 - storageSize) + ". " + memoryList.get(l).getText());
                 Thread.sleep(100);
                 driver.findElement(By.xpath(locator.getProperty("doneButton"))).click();
                 Thread.sleep(2000);
+
                 yesAndPrintPrice();
             } else {
 //   Else- reset the counter of memory and storage
@@ -134,17 +147,24 @@ public class OWtask {
             if (totalCounter >= totalSize) {
                 System.out.println("totalCounter==totalSize");
                 productCounter++;
-                processorSize = 0; storageSize = 0; productSize = 0; memorySize = 0; totalSize = 0;
-                memoryCounter = 0; storageCounter = 0; processorCounter = 0; totalCounter = 0;
+                processorSize = 0;
+                storageSize = 0;
+                productSize = 0;
+                memorySize = 0;
+                totalSize = 0;
+                memoryCounter = 0;
+                storageCounter = 0;
+                processorCounter = 0;
+                totalCounter = 0;
 
-                driver.findElement(By.xpath(".//button[text()=\"Cancel\"]")).click();
+                driver.findElement(By.xpath(locator.getProperty("cancel"))).click();
                 tempProductLoop();
                 processorCountLoop();
             }
         }
     }
 
-    public static void yesAndPrintPrice() throws InterruptedException {
+    public static void yesAndPrintPrice() throws InterruptedException, IOException {
         while (true) { // clicking Yes button until its available
             try {
                 driver.findElement(By.xpath(locator.getProperty("yesButton"))).click();
@@ -158,18 +178,57 @@ public class OWtask {
         }
         String priceProduct = driver.findElement(By.xpath(locator.getProperty("priceText"))).getText();
         System.out.println(" :-PRICE:" + priceProduct);
-        driver.navigate().refresh();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        tradePrice = priceProduct;
+
+        writeAllData(); //writing to CSV file
+
+        driver.navigate().refresh(); //to move back to product list
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         driver.findElements(By.xpath(locator.getProperty("selectOption"))).get(productCounter).click();
         reopenTillMemory();
     }
 
-    public static void reopenTillMemory() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-        driver.findElements(By.xpath(locator.getProperty("eachButton"))).get(processorCounter - 1).click();
-        Thread.sleep(500);
-        driver.findElements(By.xpath(locator.getProperty("eachButton"))).get(storageCounter - 1).click();
+    private static void writeAllData() throws IOException {
+
+        String stringSno = Integer.toString(sno);
+        wr.write(stringSno + "," + productName + "," + processorName + "," + storageName + "," + memoryName + "," + tradePrice);
+        wr.newLine();
+        sno++;
+        wr.close();
     }
 
+    public static void reopenTillMemory() throws InterruptedException, IOException {
+        List<WebElement> contentCheck = new ArrayList<>();
+        try {
+            contentCheck = driver.findElements(By.xpath(locator.getProperty("selectProcessor")));
+        } catch (Exception e) {
+
+        }
+        if (contentCheck.size() > 0) {
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+            driver.findElements(By.xpath(locator.getProperty("eachButton"))).get(processorCounter - 1).click();
+            Thread.sleep(500);
+            driver.findElements(By.xpath(locator.getProperty("eachButton"))).get(storageCounter - 1).click();
+        } else {
+            System.out.println("Product doesnt have any content\n");
+            productCounter++;
+//            processorSize = 0;
+            storageSize = 0;
+            productSize = 0;
+            memorySize = 0;
+            totalSize = 0;
+            memoryCounter = 0;
+            storageCounter = 0;
+            processorCounter = 0;
+            totalCounter = 0;
+
+            driver.findElement(By.xpath(locator.getProperty("cancel"))).click();
+            tempProductLoop();
+            processorCountLoop();
+        }
+    }
 }
+
+
+
 
