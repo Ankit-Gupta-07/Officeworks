@@ -1,0 +1,208 @@
+SNO,Product Name,Processor,Storage,RAM,Trade in value
+1,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 10-core CPU 16-core GPU,512GB SSD,16GB,$ 1085
+2,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 10-core CPU 16-core GPU,512GB SSD,32GB,$ 1085
+3,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 10-core CPU 16-core GPU,1TB SSD,16GB,$ 1160
+4,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 10-core CPU 16-core GPU,1TB SSD,32GB,$ 1160
+5,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 10-core CPU 16-core GPU,2TB SSD,16GB,$ 1250
+6,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 10-core CPU 16-core GPU,2TB SSD,32GB,$ 1250
+7,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 10-core CPU 16-core GPU,4TB SSD,16GB,$ 1415
+8,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 10-core CPU 16-core GPU,4TB SSD,32GB,$ 1415
+9,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 10-core CPU 16-core GPU,8TB SSD,16GB,$ 1560
+10,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 10-core CPU 16-core GPU,8TB SSD,32GB,$ 1560
+11,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 12-core CPU 19-core GPU,512GB SSD,16GB,$ 1160
+12,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 12-core CPU 19-core GPU,512GB SSD,32GB,$ 1160
+13,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 12-core CPU 19-core GPU,1TB SSD,16GB,$ 1250
+14,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 12-core CPU 19-core GPU,1TB SSD,32GB,$ 1250
+15,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 12-core CPU 19-core GPU,2TB SSD,16GB,$ 1375
+16,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 12-core CPU 19-core GPU,2TB SSD,32GB,$ 1375
+17,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 12-core CPU 19-core GPU,4TB SSD,16GB,$ 1545
+18,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 12-core CPU 19-core GPU,4TB SSD,32GB,$ 1545
+19,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 12-core CPU 19-core GPU,8TB SSD,16GB,$ 1690
+20,Macbook Pro M2 Pro 14-inch 2023,M2 Pro 12-core CPU 19-core GPU,8TB SSD,32GB,$ 1690
+21,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,512GB SSD,32GB,$ 1250
+22,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,512GB SSD,64GB,$ 1250
+23,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,512GB SSD,96GB,$ 1250
+24,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,1TB SSD,32GB,$ 1340
+25,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,1TB SSD,64GB,$ 1340
+26,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,1TB SSD,96GB,$ 1340
+27,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,2TB SSD,32GB,$ 1490
+28,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,2TB SSD,64GB,$ 1490
+29,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,2TB SSD,96GB,$ 1490
+30,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,4TB SSD,32GB,$ 1680
+31,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,4TB SSD,64GB,$ 1680
+32,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,4TB SSD,96GB,$ 1680
+33,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,8TB SSD,32GB,$ 1825
+34,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,8TB SSD,64GB,$ 1825
+35,Macbook Pro M2 Max 14-inch 2023,12-core CPU 30-core GPU,8TB SSD,96GB,$ 1825
+36,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,512GB SSD,32GB,$ 1375
+37,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,512GB SSD,64GB,$ 1375
+38,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,512GB SSD,96GB,$ 1375
+39,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,1TB SSD,32GB,$ 1475
+40,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,1TB SSD,64GB,$ 1475
+41,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,1TB SSD,96GB,$ 1475
+42,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,2TB SSD,32GB,$ 1630
+43,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,2TB SSD,64GB,$ 1630
+44,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,2TB SSD,96GB,$ 1630
+45,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,4TB SSD,32GB,$ 1805
+46,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,4TB SSD,64GB,$ 1805
+47,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,4TB SSD,96GB,$ 1805
+48,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,8TB SSD,32GB,$ 1955
+49,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,8TB SSD,64GB,$ 1955
+50,Macbook Pro M2 Max 14-inch 2023,12-core CPU 38-core GPU,8TB SSD,96GB,$ 1955
+51,Macbook Pro M2 Pro 16-inch 2023,M2 Pro 12-core CPU 19-core GPU,512GB SSD,16GB,$ 1310
+52,Macbook Pro M2 Pro 16-inch 2023,M2 Pro 12-core CPU 19-core GPU,512GB SSD,32GB,$ 1310
+53,Macbook Pro M2 Pro 16-inch 2023,M2 Pro 12-core CPU 19-core GPU,1TB SSD,16GB,$ 1410
+54,Macbook Pro M2 Pro 16-inch 2023,M2 Pro 12-core CPU 19-core GPU,1TB SSD,32GB,$ 1410
+55,Macbook Pro M2 Pro 16-inch 2023,M2 Pro 12-core CPU 19-core GPU,2TB SSD,16GB,$ 1500
+56,Macbook Pro M2 Pro 16-inch 2023,M2 Pro 12-core CPU 19-core GPU,2TB SSD,32GB,$ 1500
+57,Macbook Pro M2 Pro 16-inch 2023,M2 Pro 12-core CPU 19-core GPU,4TB SSD,16GB,$ 1640
+58,Macbook Pro M2 Pro 16-inch 2023,M2 Pro 12-core CPU 19-core GPU,4TB SSD,32GB,$ 1640
+59,Macbook Pro M2 Pro 16-inch 2023,M2 Pro 12-core CPU 19-core GPU,8TB SSD,16GB,$ 1785
+60,Macbook Pro M2 Pro 16-inch 2023,M2 Pro 12-core CPU 19-core GPU,8TB SSD,32GB,$ 1785
+61,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,512GB SSD,32GB,$ 1505
+62,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,512GB SSD,64GB,$ 1505
+63,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,512GB SSD,96GB,$ 1505
+64,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,1TB SSD,32GB,$ 1745
+65,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,1TB SSD,64GB,$ 1745
+66,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,1TB SSD,96GB,$ 1745
+67,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,2TB SSD,32GB,$ 1745
+68,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,2TB SSD,64GB,$ 1745
+69,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,2TB SSD,96GB,$ 1745
+70,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,4TB SSD,32GB,$ 1955
+71,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,4TB SSD,64GB,$ 1955
+72,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,4TB SSD,96GB,$ 1955
+73,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,8TB SSD,32GB,$ 2105
+74,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,8TB SSD,64GB,$ 2105
+75,Macbook Pro M2 Max 16-inch 2023,12-core CPU 38-core GPU,8TB SSD,96GB,$ 2105
+76,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,512GB SSD,32GB,$ 1415
+77,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,512GB SSD,64GB,$ 1415
+78,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,512GB SSD,96GB,$ 1415
+79,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,1TB SSD,32GB,$ 1535
+80,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,1TB SSD,64GB,$ 1535
+81,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,1TB SSD,96GB,$ 1535
+82,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,2TB SSD,32GB,$ 1660
+83,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,2TB SSD,64GB,$ 1660
+84,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,2TB SSD,96GB,$ 1660
+85,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,4TB SSD,32GB,$ 1800
+86,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,4TB SSD,64GB,$ 1800
+87,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,4TB SSD,96GB,$ 1800
+88,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,8TB SSD,32GB,$ 1945
+89,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,8TB SSD,64GB,$ 1945
+90,Macbook Pro M2 Max 16-inch 2023,12-core CPU 30-core GPU,8TB SSD,96GB,$ 1945
+91,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,256GB SSD,8GB,$ 810
+92,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,256GB SSD,16GB,$ 810
+93,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,256GB SSD,24GB,$ 0
+94,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,512GB SSD,8GB,$ 835
+95,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,512GB SSD,16GB,$ 835
+96,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,512GB SSD,24GB,$ 0
+97,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,1TB SSD,8GB,$ 855
+98,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,1TB SSD,16GB,$ 855
+99,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,1TB SSD,24GB,$ 0
+100,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,2TB SSD,8GB,$ 905
+101,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,2TB SSD,16GB,$ 905
+102,Macbook Air M2 13-inch 2022,8-core CPU 8-core GPU,2TB SSD,24GB,$ 0
+103,Macbook Air M2 13-inch 2022,8-core CPU 10-core GPU,256GB SSD,16GB,$ 810
+104,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,256GB SSD,8GB,$ 960
+105,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,256GB SSD,16GB,$ 960
+106,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,256GB SSD,24GB,$ 960
+107,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,512GB SSD,8GB,$ 1010
+108,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,512GB SSD,16GB,$ 1010
+109,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,512GB SSD,24GB,$ 1010
+110,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,1TB SSD,8GB,$ 905
+111,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,1TB SSD,16GB,$ 925
+112,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,1TB SSD,24GB,$ 975
+113,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,2TB SSD,8GB,$ 925
+114,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,2TB SSD,16GB,$ 975
+115,MacBook Pro M2 13-inch 2022,8-core CPU 10-core GPU,2TB SSD,24GB,$ 1025
+116,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,256GB,8GB,$ 900
+117,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,256GB,16GB,$ 900
+118,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,256GB,32GB,$ 900
+119,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,256GB,64GB,$ 900
+120,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,512GB SSD,32GB,$ 980
+121,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,512GB,8GB,$ 980
+122,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,512GB,16GB,$ 980
+123,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,512GB,64GB,$ 980
+124,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,1TB,8GB,$ 1050
+125,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,1TB,16GB,$ 1050
+126,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,1TB,32GB,$ 1050
+127,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,1TB,64GB,$ 1050
+128,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,2TB,8GB,$ 1190
+129,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,2TB,16GB,$ 1190
+130,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,2TB,32GB,$ 1190
+131,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,2TB,64GB,$ 1190
+132,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,4TB,16GB,$ 1360
+133,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,4TB,32GB,$ 1360
+134,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,4TB,64GB,$ 1360
+135,MacBook Pro M1 Pro 16-inch 2021,10 Core CPU 16 Core GPU,8TB SSD,64GB,$ 1435
+136,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 8 Core CPU 14 Core GPU,512GB SSD,32GB,$ 925
+137,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 8 Core CPU 14 Core GPU,512GB,16GB,$ 865
+138,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 8 Core CPU 14 Core GPU,1TB,16GB,$ 900
+139,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 8 Core CPU 14 Core GPU,1TB,32GB,$ 900
+140,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 8 Core CPU 14 Core GPU,2TB,16GB,$ 955
+141,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 8 Core CPU 14 Core GPU,2TB,32GB,$ 955
+142,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 8 Core CPU 14 Core GPU,4TB,16GB,$ 1010
+143,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 8 Core CPU 14 Core GPU,4TB,32GB,$ 1010
+144,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 8 Core CPU 14 Core GPU,8TB,16GB,$ 1145
+145,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 8 Core CPU 14 Core GPU,8TB,32GB,$ 1145
+146,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 16 Core GPU,512GB,16GB,$ 980
+147,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 16 Core GPU,512GB,32GB,$ 980
+148,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 16 Core GPU,1TB SSD,16GB,$ 1050
+149,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 16 Core GPU,1TB,32GB,$ 1050
+150,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 16 Core GPU,2TB,16GB,$ 1190
+151,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 16 Core GPU,2TB,32GB,$ 1190
+152,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 16 Core GPU,4TB,16GB,$ 1360
+153,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 16 Core GPU,4TB,32GB,$ 1360
+154,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 16 Core GPU,8TB,16GB,$ 1435
+155,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 16 Core GPU,8TB,32GB,$ 1435
+156,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 14 Core GPU,512GB,16GB,$ 935
+157,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 14 Core GPU,512GB,32GB,$ 935
+158,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 14 Core GPU,1TB,16GB,$ 995
+159,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 14 Core GPU,1TB,32GB,$ 995
+160,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 14 Core GPU,2TB,16GB,$ 1065
+161,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 14 Core GPU,2TB,32GB,$ 1065
+162,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 14 Core GPU,4TB,16GB,$ 1200
+163,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 14 Core GPU,4TB,32GB,$ 1200
+164,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 14 Core GPU,8TB SSD,32GB,$ 1390
+165,Macbook Pro M1 Pro 14-inch 2021,M1 Pro 10 Core CPU 14 Core GPU,8TB,16GB,$ 1390
+166,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,512GB SSD,32GB,$ 1015
+167,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,512GB,16GB,$ 1015
+168,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,512GB,64GB,$ 1015
+169,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,1TB,16GB,$ 1135
+170,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,1TB,32GB,$ 1135
+171,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,1TB,64GB,$ 1135
+172,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,2TB,16GB,$ 1245
+173,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,2TB,32GB,$ 1245
+174,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,2TB,64GB,$ 1245
+175,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,4TB,16GB,$ 1495
+176,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,4TB,32GB,$ 1495
+177,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,4TB,64GB,$ 1495
+178,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,8TB,16GB,$ 1640
+179,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,8TB,32GB,$ 1640
+180,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 24 Core GPU,8TB,64GB,$ 1640
+181,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 32 Core GPU,512GB,16GB,$ 1090
+182,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 32 Core GPU,512GB,32GB,$ 1090
+183,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 32 Core GPU,512GB,64GB,$ 1090
+184,Macbook Pro M1 Max 14-inch 2021,M1 Max 10 Core CPU 32 Core GPU,1TB SSD,16GB,$ 1215
+185,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,256GB SSD,16GB,$ 1000
+186,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,256GB,8GB,$ 1000
+187,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,256GB,32GB,$ 1000
+188,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,256GB,64GB,$ 1000
+189,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,512GB SSD,16GB,$ 1085
+190,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,512GB,8GB,$ 1085
+191,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,512GB,32GB,$ 1085
+192,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,512GB,64GB,$ 1085
+193,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,1TB SSD,32GB,$ 1205
+194,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,1TB,8GB,$ 1205
+195,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,1TB,16GB,$ 1205
+196,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,1TB,64GB,$ 1205
+197,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,2TB SSD,8GB,$ 1310
+198,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,2TB SSD,16GB,$ 1310
+199,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,2TB,32GB,$ 1310
+200,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,2TB,64GB,$ 1310
+201,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,4TB,16GB,$ 1555
+202,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,4TB,32GB,$ 1555
+203,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,4TB,64GB,$ 1555
+204,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,8TB SSD,16GB,$ 1700
+205,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,8TB,32GB,$ 1700
+206,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 24 Core GPU,8TB,64GB,$ 1700
+207,Macbook Pro M1 Max 16-inch 2021,10 Core CPU 32 Core GPU,256GB SSD,8GB,$ 1000
